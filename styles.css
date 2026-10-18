@@ -23,3 +23,14 @@
 @media(min-width:1600px){.page-hero{padding-left:max(var(--pad),calc((100vw - 1450px)/2));padding-right:max(var(--pad),calc((100vw - 1450px)/2))}}
 @media(max-width:800px){.page-hero{min-height:520px;padding-top:140px;padding-bottom:50px}.property-page-hero{min-height:650px}.page-hero h1{font-size:clamp(45px,7.7vw,70px)}.page-hero .detail-title .button{margin-top:28px}}
 @media(max-width:520px){.page-hero{min-height:490px;padding-top:125px;padding-bottom:42px}.page-hero h1{font-size:43px;line-height:1.1}.page-hero-content>p:not(.eyebrow){font-size:14px}.property-page-hero{min-height:640px}.page-hero .breadcrumbs{font-size:10px;gap:7px;margin-bottom:24px}.property-page-hero .detail-title h1{font-size:42px}.page-hero .specs{gap:12px;font-size:12px}.page-hero+.listing-search{padding-top:20px}}
+/* Supplied logo artwork: crop its empty margins through layout, preserving the original file. */
+.brand-logo{display:block;position:relative;width:180px;height:98px;overflow:hidden;mix-blend-mode:screen;flex-shrink:0}
+.brand-logo img{position:absolute;width:151.82%;max-width:none;height:auto;left:-27.73%;top:-31%;}
+.site-header>a:not(.skip){flex-shrink:0}.site-header{gap:22px}
+.footer .brand-logo{width:260px;height:141px}
+@media(max-width:1050px){.site-header .brand-logo{width:155px;height:84px}.footer .brand-logo{width:220px;height:119px}}
+@media(max-width:520px){.site-header .brand-logo{width:145px;height:79px}.footer .brand-logo{width:230px;height:125px}}
+
+/* Genuine transparent SVG: original artwork, with black mapped to alpha. */
+.brand-logo{mix-blend-mode:normal;overflow:visible}
+.brand-logo img{position:static;width:100%;height:100%;max-width:100%;object-fit:contain}
